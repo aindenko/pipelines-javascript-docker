@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: aindenkopipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: aindenkopipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: aindenkopipelinesjavascriptdocker 
+          image: cncprimerday3.azurecr.io/aindenkopipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
