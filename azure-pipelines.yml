@@ -54,7 +54,7 @@ stages:
     displayName: Deploy job
     pool:
       vmImage: $(vmImageName)
-    environment: 'azooinmyluggagepipelinesjavascriptdocker.aksnamespace'
+    environment: 'Development.development'
     strategy:
       runOnce:
         deploy:
